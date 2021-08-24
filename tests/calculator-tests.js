@@ -12,6 +12,10 @@ describe('The Calculator', () => {
       expect(calculator.sum(2, 3)).to.equal(5);
     });
 
+    it('Should sum many numbers', () => {
+      expect(calculator.sum(2, 3, 7, 12)).to.equal(24);
+    });
+
     it('Should sub two positive integers', () => {
       expect(calculator.sub(3, 2)).to.equal(1);
     });
